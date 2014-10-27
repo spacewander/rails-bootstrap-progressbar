@@ -1,0 +1,2 @@
+module BootstrapProgressbar::Helper
+end

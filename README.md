@@ -1,4 +1,4 @@
 rails-bootstrap-progressbar
 ===========================
 
-build Bootstrap 3 progress bar quickly in rails
+Bootstrap_progressbar will make it super easy to create beautiful-looking progress bar in rails using Bootstrap 3
