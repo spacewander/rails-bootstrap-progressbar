@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/spacewander/rails-bootstrap-progressbar'
   s.summary     = 'build Bootstrap 3 progress bar quickly in rails'
   s.description = 'bootstrap_progressbar makes it super easy to create beautiful-looking progress bar in rails using Bootstrap 3'
-  s.files       = Dir["{app,config,db,lib}/**/*"] + ["README.md"]
+  s.files       = Dir["{app,config,db,lib}/**/*"] + ["README.md", "Rakefile"]
   s.test_files  = Dir["test/*"]
   s.license     = 'MIT'
 
