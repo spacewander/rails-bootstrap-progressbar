@@ -8,6 +8,7 @@ Bootstrap_progressbar will make it super easy to create beautiful-looking [progr
 ## require
 
 Rails 4.0+
+
 Bootstrap 3+ (you can install with [twbs/bootstrap-sass](https://github.com/twbs/bootstrap-sass))
 
 ## install
@@ -39,6 +40,7 @@ Remove the .sr-only class from within the progress bar to show a visible percent
 ```
 <%= progress_bar 0.6, label: true, style: 'min-width: 20px' %>
 => <div class="progress" style="min-width: 20px"><div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">60%</div></div>
+```
 
 #### Low percentages
 
@@ -74,6 +76,7 @@ Progress bars use some of the same button and alert classes for consistent style
 
 <div class="progress"><div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><span class="sr-only">80%</span></div></div>
 ```
+
 #### Striped
 
 Uses a gradient to create a striped effect. Not available in IE8.
@@ -150,3 +153,4 @@ To init environment:
 Then you can:
 
     $ bundle exec rake test
+
