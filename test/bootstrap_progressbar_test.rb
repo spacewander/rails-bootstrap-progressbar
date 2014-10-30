@@ -70,4 +70,19 @@ class BootstrapProgressbarTest < ActionView::TestCase
     assert_equal "<div class='more progress-bar' role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'><span class='sr-only'>50%</span></div>", result
   end
 
+  test "support selecting an id for progress-bar" do
+    result = simple_progress_bar(0.5, id: 'this-progress-bar')
+    assert_equal "<div class='progress-bar' id='this-progress-bar' role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'><span class='sr-only'>50%</span></div>", result
+  end
+
+  test "support selecting an id for progress" do
+    result = progress_bar(0.5, id: 'this-progress')
+    assert_equal "<div class='progress' id='this-progress' ><div class='progress-bar' role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'><span class='sr-only'>50%</span></div></div>", result
+  end
+
+  test "support defining style for progress" do
+    result = progress_bar(0.5, style: 'min-width: 20px;')
+    assert_equal "<div class='progress' style='min-width: 20px;' ><div class='progress-bar' role='progressbar' aria-valuenow='50' aria-valuemin='0' aria-valuemax='100' style='width: 50%'><span class='sr-only'>50%</span></div></div>", result
+  end
+
 end
