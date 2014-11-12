@@ -1,6 +1,8 @@
 rails-bootstrap-progressbar
 ===========================
 
+![](https://api.travis-ci.org/spacewander/rails-bootstrap-progressbar.png?branch=master)
+
 ## description
 
 Bootstrap_progressbar will make it super easy to create beautiful-looking [progress bar](http://getbootstrap.com/components/#progress) in rails using Bootstrap 3
